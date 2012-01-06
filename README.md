@@ -7,9 +7,8 @@ A simple jQuery plugin for keyboard scrolling through different sections in a we
 ##Example:
 
 * included in the github repo
-* expressoviagens.com
+* [expressoviagens.com](http://expressoviagens.com/ "Expresso Viagens")
 
-Author
 
 ## License
 
