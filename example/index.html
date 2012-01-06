@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyboard Scroll jQuery Plugin Example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="../jquery.keyboardScroll.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("body").keyboardScroll();
+		});
+	</script>
+	<style>
+		/* --- Reduced CSS reset --- */
+		html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+		a, footer, header, menu, nav, section {
+		    margin: 0; padding: 0;
+		    border: 0; outline: 0;
+		    font-weight: inherit; font-style: inherit; font-family: inherit;
+		    line-height: 1;
+		    text-decoration: none;
+		    vertical-align: baseline;
+		}
+		ol, ul { list-style: none; }
+		section { display: block; }
+		
+		/* Main CSS */
+		
+		section {
+			height: 500px;
+		}
+	</style>
+<body>
+	<section>First section</section>
+	<section>Second section</section>
+	<section>Third section</section>
+	<section>Fourth section</section>
+</body>
+</head>
+</html>
