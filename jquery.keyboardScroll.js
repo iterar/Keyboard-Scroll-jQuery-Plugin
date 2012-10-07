@@ -31,10 +31,7 @@ To-do:
 		}
 		var options = $.extend({}, defaults, options);
 		
-		/* Get sections for keyboard scroll
-		   To-do:
-		   	   - Order by y
-		*/
+		/* Get sections for keyboard scroll */
 		var sections = [];
 		this.children(options.htmlTag).each(function(index){
 			sections.push($(this));
@@ -55,6 +52,7 @@ To-do:
 					limits.push([topLimit, bottomLimit]);
 				});
 				
+				/* Limits for remaining document */
 				topLimit = sections[sections.length-1].position().top - options.offset + sections[sections.length-1].height() - options.offset;
 				limits.push([topLimit, $(document).height()]);
 			}
@@ -75,7 +73,7 @@ To-do:
 	    }
 	    
 	    function scrollToY(y) {
-		    $('html,body').animate({
+		    $('html,body').stop().animate({
 				scrollTop: y
 			}, options.scrollSpeed);
 	    }
